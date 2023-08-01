@@ -12,7 +12,7 @@ SELECT *
 FROM AdventureWorksDW2022.dbo.DimProduct
 GO
 
--- 1.3 Query com as colunas j· selecionadas
+-- 1.3 Query com as colunas j√° selecionadas
 SELECT
 	DimProduct.ProductKey,
 	DimProduct.ProductSubcategoryKey,
@@ -36,5 +36,3 @@ FROM AdventureWorksDW2022.dbo.DimProduct
 LEFT JOIN AdventureWorksDW2022.dbo.DimProductSubcategory
 	ON DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
 GO
-
--- tempo 15:00
