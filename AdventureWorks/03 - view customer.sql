@@ -19,7 +19,7 @@ SELECT
 	DC.EnglishEducation,
 	DC.EnglishOccupation,
 	DC.DateFirstPurchase
-FROM AdventureWorksDW2017.dbo.DimCustomer AS DC
+FROM AdventureWorksDW2022.dbo.DimCustomer AS DC
 GO
 -- 1.4 Visualizando a tabela DimGeography
 SELECT *
