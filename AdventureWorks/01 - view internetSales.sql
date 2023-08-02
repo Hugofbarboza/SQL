@@ -1,21 +1,21 @@
--- criar um database staging area
+-- Criar um database staging area | CREATE DATABASE [NOME BANCO DE DADOS]
 CREATE DATABASE AdventureW_DA
 
--- entrar no ambiente da base de dados AdventureW_SA
+-- Entrar no ambiente do banco de dados AdventureW_SA
 USE AdventureW_SA
 GO
 
--- quantidade de linhas da tabela FactInternetSales
--- banco de dados AdventureWorksDW2022
+-- Quantidade de linhas da tabela FactInternetSales | SELECT COUNT(*)
+
 SELECT COUNT(*)
 FROM AdventureWorksDW2022.dbo.FactInternetSales
 
--- verificando a tabela FactInternetSales
--- banco de dados AdventureWorksDW2022
+-- Verificando a tabela FactInternetSales
+
 SELECT * 
 FROM AdventureWorksDW2022.dbo.FactInternetSales
 
--- selecionando as tabelas que serão utilizadas para criar a view
+-- Selecionando as tabelas que serão utilizadas para criar a view
 
 SELECT 
 	FactInternetSales.ProductKey,
@@ -36,7 +36,7 @@ FROM AdventureWorksDW2022.dbo.FactInternetSales
 GO
 
 
--- criar view factInternetSales
+-- Criar view factInternetSales | CREATE VIEW [NOME VIEW] AS 
 CREATE VIEW vw_factInternetSales AS
 SELECT 
 	FactInternetSales.ProductKey,
@@ -56,6 +56,6 @@ SELECT
 FROM AdventureWorksDW2022.dbo.FactInternetSales
 GO
 
--- verificando a view
+-- Verificando a VIEW acima
 SELECT *
 FROM vw_factInternetSales
