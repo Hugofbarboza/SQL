@@ -1,28 +1,28 @@
 /* ### WHERE ### 
 
-A cláusula WHERE é usada para filtrar registros(linhas).
-Ele é usado para extrair apenas os registros que atendem a uma condição especificada.
+A clÃ¡usula WHERE Ã© usada para filtrar registros(linhas).
+Ele Ã© usado para extrair apenas os registros que atendem a uma condiÃ§Ã£o especificada.
 
 
 
 ** SINTAXE
 SELECT coluna1, coluna2
 FROM tabela 
-WHERE condição
+WHERE condiÃ§Ã£o
 
-** Operadores que são usados junto com a cláusula WHERE
+** Operadores que sÃ£o usados junto com a clÃ¡usula WHERE
 
 = Igual
 > Maior que
 < menor que
 >= Maior ou igual
 <= menor ou igual
-<> Diferente. Observação: em algumas versões do SQL, esse operador pode ser escrito como !=
+<> Diferente. ObservaÃ§Ã£o: em algumas versÃµes do SQL, esse operador pode ser escrito como !=
 BETWEEN Entre um determinado intervalo
-LIKE Procurar um padrão
-IN Para especificar vários valores possíveis para uma coluna
-OR Operador lógico OU
-AND Operador lógico E
+LIKE Procurar um padrÃ£o
+IN Para especificar vÃ¡rios valores possÃ­veis para uma coluna
+OR Operador lÃ³gico OU
+AND Operador lÃ³gico E
 
 */
 
@@ -64,13 +64,13 @@ FROM Production.Product
 WHERE Color = 'Blue' OR Color = 'Red'
 GO
 
--- 7 Filtrando produtos que custam mais que 1.500 dólares
+-- 7 Filtrando produtos que custam mais que 1.500 dÃ³lares
 SELECT *
 FROM Production.Product
 WHERE ListPrice > 1500
 GO
 
--- 8 Filtrando produtos que custam entre 1200 a 2000 dólares
+-- 8 Filtrando produtos que custam entre 1200 a 2000 dÃ³lares
 SELECT *
 FROM Production.Product
 WHERE ListPrice > 1200 AND ListPrice < 2000
@@ -81,7 +81,7 @@ FROM Production.Product
 WHERE ListPrice BETWEEN 1200 AND 2000
 GO
 
--- 9 Filtrando produtos que não sejam da cor vermelha
+-- 9 Filtrando produtos que nÃ£o sejam da cor vermelha
 SELECT *
 FROM Production.Product
 WHERE Color <> 'Red'
@@ -92,4 +92,3 @@ FROM Production.Product
 WHERE Color <> 'Red'
 GO
 
---20:38
